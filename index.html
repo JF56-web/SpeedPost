@@ -27,6 +27,28 @@
             margin:0px;
             position: relative;
             left: 2%;
+            top: 0.25em;
+            overflow:visible;
+            padding:0px;
+
+        }
+        h2{
+            font-size: 64px;
+            font-family: font;
+            margin:0px;
+            position: relative;
+            left: 0.75em;
+            top: 25%;
+            overflow:visible;
+            padding:0px;
+
+        }
+        h3{
+            font-size: 64px;
+            font-family: font;
+            margin:0px;
+            position: relative;
+            left: 0.75em;
             overflow:visible;
             padding:0px;
 
@@ -43,7 +65,7 @@
             width: 100.5vw;
             top: 50em;
         }
-        h2{
+        h4{
             font-size: 30px;
             font-family: font;
             margin:0px;
@@ -59,7 +81,37 @@
             border-radius: 8px;
             position: relative;
             bottom: -20em;
-            right: -1.48%;
+            right: 46%;
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 40px;
+            cursor: pointer;
+            
+        }
+        .button1{
+            font-family: font;
+            border-radius: 8px;
+            position: relative;
+            top: -3.5em;
+            left: 1em;
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 40px;
+            cursor: pointer;
+            
+        }
+        .button3{
+            font-family: font;
+            border-radius: 8px;
+            position: relative;
+            top: -3.5em;
+            left: 2em;
             background-color: #000000;
             color: white;
             text-align: center;
@@ -73,17 +125,70 @@
             border-left: 2px solid white;
             height: 4.35em;
             position: absolute;
-            left: 18em;
+            left: 10em;
             top: 0;
+        }
+        p{
+            font-family: font;
+            font-size: 36px;
+            position: relative;
+            left: 1em;
+        }
+        .timer{
+            font-family: font;
+            font-size: 30px;
+            position: relative;
+            top: 30em;
+            left: -20em;
+        }
+        div{
+            font-family: font;
+            font-size: 32px;
         }
     </style>
     <h1 id = Home>SpeedPost</h1>
     <body>
+        <div id="randomString" style="position: relative; top: 15em; left: 2em;"></div>
+        <div id="randomString2" style="position: relative; top: 15em; left: 2em;"></div>
+        <script>
+            // List of strings
+            const RC = ["1980s F1 Car at the Nurburgring GP", "BTCC Car at Thruxton", "Indycar at Road America", "Mazda MX5 Cup at Lime Rock Park", "Ferrari 488 GT3 at Le Mans", "Formula 4 Car at Mugello", "Praga R1 at Redbull Ring", "Radical SR3XX at Silverstone", "Ginetta G40 Junior at Laguna Seca"];
+            const RC2 = ["BMW M4 GT4 at Spa"];
+            const RC3 = [""];
+
+            // Function to pick a random string
+            function getRandomString() {
+                const randomIndex = Math.floor(Math.random() * RC.length);
+                return RC[randomIndex];
+            }
+            function getRandomString2() {
+                const randomIndex2 = Math.floor(Math.random() * RC2.length);
+                return RC2[randomIndex2];
+            }
+            function getRandomString3() {
+                const randomIndex3 = Math.floor(Math.random() * RC3.length);
+                return RC3[randomIndex3];
+            }
+
+
+
+            // Display the random string when the page loads
+            document.getElementById("randomString").innerText = getRandomString();
+            document.getElementById("randomString2").innerText = getRandomString2();
+            document.getElementById("randomString3").innerText = getRandomString3();
+        </script>
         <!--<img src = "C:\Users\marct\Desktop\App\www\img\Logo.jpg" alt="Logo" style="width:84px;height:84px; margin-top: 0px; padding-top: 0px; position: relative; bottom: 110px;">-->
         <hr>
         <div class = "vl"></div>
+        <p>Welcome to SpeedPost, SpeedPost gives you random sim-racing challenges.<br>
+            You can choose laptime or race challenges.</p>
+        
+        <h2 id = LChal><u>Lap Challenges: </u></h2>
+        <h3 id =RChal><u>Race Challenges :</u></h3>
+        <button class = button1 onclick="location.href='#LChal'">Go to Laptime Challenges</button>
+        <button class = button3 onclick="location.href='#RChal'">Go to Race Challenges</button>
         <button class = button2 onclick="location.href='#Home'">Go to Home</button>
         <hr class="Footer">
-        <h2 id = Footer>Credits: Jacob F</h2>        
+        <h4 id = Footer>Credits: Jacob F</h2>        
     </body>
 </html>
