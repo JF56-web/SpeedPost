@@ -16,7 +16,9 @@
             font-weight: bold;
         }
         body{
-            background-color: #487174;
+            width: 95vw;
+            height: 95vh;
+            background-color:#2EA297;
         }
 
         h1{
@@ -29,30 +31,34 @@
             padding:0px;
 
         }
+        hr{
+            position: relative;
+            left: -1em;
+            width: 104.53%;
+            top: -1em;
+        }
+        .Footer{
+            position: relative;
+            left: -1em;
+            width: 104.53%;
+            top: 52em;
+        }
         h2{
-            font-size: 45px;
+            font-size: 30px;
             font-family: font;
             margin:0px;
             position: relative;
             left: 2%;
-            bottom: 2%;
+            bottom: -30em;
             overflow:visible;
             padding:0px;
 
-        }
-        hr{
-            background-color:#2EA297;
-            position: relative;
-            bottom: 20px;
-            width: 103vw;
-            left: -2%;
-            height: 160vh;
         }
         .button2{
             font-family: font;
             border-radius: 8px;
             position: relative;
-            bottom: 2%;
+            bottom: -28em;
             right: -2%;
             background-color: #000000;
             color: white;
@@ -63,12 +69,22 @@
             cursor: pointer;
             
         }
+        .vl {
+            border-left: 2px solid white;
+            height: 6.1em;
+            position: absolute;
+            left: 30%;
+            margin-left: -3px;
+            top: 0;
+        }
     </style>
-    <h1 id = Home>My Website Made In HTML</h1>
+    <h1 id = Home>SpeedPost</h1>
     <body>
         <!--<img src = "C:\Users\marct\Desktop\App\www\img\Logo.jpg" alt="Logo" style="width:84px;height:84px; margin-top: 0px; padding-top: 0px; position: relative; bottom: 110px;">-->
         <hr>
+        <div class = "vl"></div>
         <button class = button2 onclick="location.href='#Home'">Go to Home</button>
+        <hr class="Footer">
         <h2 id = Footer>Credits: Jacob F</h2>        
     </body>
 </html>
