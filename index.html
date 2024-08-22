@@ -1,0 +1,94 @@
+<!--CHANGE PX TO EM, REM OR %-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <title>App</title>
+    </head>
+    <style>
+        @font-face {
+            font-family: font;
+            src: url(Jersey10-Regular.ttf);
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+
+        h1{
+            font-size: 90px;
+            font-family: font;
+            margin:0px;
+            position: relative;
+            left: 20px;
+            overflow:visible;
+            padding:0px;
+
+        }
+        h2{
+            font-size: 45px;
+            font-family: font;
+            margin:0px;
+            position: relative;
+            left: 20px;
+            bottom: 20px;
+            overflow:visible;
+            padding:0px;
+
+        }
+        hr{
+            background-color:#2EA297;
+            position: relative;
+            bottom: 20px;
+            width: 100vw;
+            left: -7px;
+            height: 160vh;
+        }
+        .button{
+            font-family: font;
+            border-radius: 8px;
+            position: relative;
+            bottom: 1200px;
+            left: 50px;
+            background-color: #000000;
+            border-radius: 8px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 32px;
+            margin: 4px 2px;
+            cursor: pointer;
+            
+        }
+        .button2{
+            font-family: font;
+            border-radius: 8px;
+            position: relative;
+            bottom: 20px;
+            right: 175px;
+            background-color: #000000;
+            border-radius: 8px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 32px;
+            margin: 4px 2px;
+            cursor: pointer;
+            
+        }
+    </style>
+    <h1 id = Home>My Website</h1>
+    <body>
+        <!--<img src = "C:\Users\marct\Desktop\App\www\img\Logo.jpg" alt="Logo" style="width:84px;height:84px; margin-top: 0px; padding-top: 0px; position: relative; bottom: 110px;">-->
+        <hr>
+        <button class = button onclick="location.href='#Footer'">Go to Footer</button>
+        <button class = button2 onclick="location.href='#Home'">Go to Home</button>
+        <h2 id = Footer>Credits: Jacob F</h2>        
+    </body>
+</html>
